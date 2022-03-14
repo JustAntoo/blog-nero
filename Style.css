@@ -1,0 +1,162 @@
+/* Font */
+h1,h2,h3,h4,h5,h6    .h1 .h2 .h3 .h4 .h5 .h6{
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Selettore universale */
+* {
+    font-family: 'Jura', sans-serif;
+}    
+/* Colori */
+:root{
+    --primario:  #2B9DF4;
+    --secondario: white;
+    --terziario: grey;
+}
+
+.text-primario{
+    color:var(--primario);
+    
+}
+
+.text-secondario{
+    color:var(--secondario);
+}
+
+.text-terziario{
+    color:var(--terziario)
+}
+
+body{
+  background-color: black;  
+}
+
+/* header */
+
+.header{
+    background-image: url(/media/moon.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+}
+
+.posizione-testo-header{
+    margin-top:300px;
+}
+
+/* Lorem e numeri */
+
+.spazio-tra-due-elementi{
+    margin-top: 250px;
+}
+
+.linee-blu{
+ border: 1px solid var(--primario);
+}
+
+/* Lorem e luna  */
+.posizione-luna{
+    margin-left: 600px;
+    margin-top: -180px;
+}
+
+.margine-sx-testo{
+    margin-left: 50px;
+}
+
+.margin-top{
+    margin-top:100px;
+}
+
+/* 5 lorem + testo */
+.posizione-missile{
+   margin-left: 500px;
+    margin-top: -700px;
+}
+
+.margine-loghi{
+    margin: 0px 0px 0px 0px;
+}
+
+.linee-blu-2{
+    border: 1px solid var(--primario);
+    width: 600px;
+    margin-left: 350px;  
+}
+
+.rocket-custom{
+    margin-left:350px;
+}
+/* Bottone Go to */
+
+.bottone{
+    margin-left: 480px;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    color:var(--secondario);
+    text-transform: uppercase;        
+    position: relative;
+    transition: 1s;  
+}
+
+.bottone::after{
+    position: absolute;
+    content: "";
+    top: 0px;
+    left:-10px;
+    height: 100%;
+    width:10px;
+    border-left: 4px solid var(--primario);    
+    border-top: 4px solid var(--primario);    
+    border-bottom: 4px solid var(--primario);    
+    transition: 0.4s;
+}
+
+
+.bottone::before{
+    position: absolute;
+    content: "";
+    top: 0px;
+    right:-10px;
+    height: 100%;
+    width:10px;
+    border-right: 4px solid var(--primario);    
+    border-top: 4px solid var(--primario);    
+    border-bottom: 4px solid var(--primario);    
+    transition:0.4s;
+}
+
+.bottone:hover::after{
+    left:0px;
+    width: 15px;
+    
+}
+
+.bottone:hover::before{
+    right:0px;
+    width: 15px;
+}
+
+/* Footer */
+
+.immagine-footer{
+    background-image: url(/media/sunrise-1765027_1920.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+    .loghi{
+        display: flex;
+        justify-content: space-between;
+        margin-top: -600px;
+    }
+
+    .posizione-loghi{
+        margin-top: -80px;
+    }
+
+    .linea-blu-footer{
+       border: 2px solid var(--primario); 
+       width: 500px;
+    }
